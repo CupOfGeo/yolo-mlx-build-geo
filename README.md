@@ -1,6 +1,6 @@
 # Digital Wardrobe PoC
 
-A "what did I wear today" log driven by a static IP camera pointed at a front
+A Wardrobe catalog service driven by a static IP camera pointed at a front
 door. Built as a weekend learning project on top of
 [yolo-mlx](https://github.com/thewebAI/yolo-mlx) (installed from PyPI).
 
