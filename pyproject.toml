@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0,<78", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yolo-mlx-build-geo"
+version = "0.1.0"
+description = "Digital wardrobe PoC: RTSP camera -> MLX detection -> Claude vision -> clustered wardrobe catalog"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "AGPL-3.0-only"
+dependencies = [
+    "yolo-mlx[tracking]>=0.3.1",
+    "anthropic>=0.104.1",
+    "pydantic>=2.13.4",
+    "sentence-transformers>=5.5.1",
+    "numpy>=2.0.0",
+    "pillow>=10.0.0",
+]
+
+[project.urls]
+Repository = "https://github.com/CupOfGeo/yolo-mlx-build-geo"
+
+[tool.setuptools.packages.find]
+include = ["wardrobe*"]
